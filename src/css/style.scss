@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+img {
+    display: block;
+    width: 50%;
+    opacity: 0;
+}
+
+.scroll-container {
+    padding: 0 10rem 10rem;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+        img:not(:first-child) {
+            margin-top: 10rem;
+        }
+
+        h1 {
+            font-size: 5rem;
+            line-height: 1.6;
+
+            span {
+                text-decoration: underline;
+                text-underline-offset: 1rem;
+                cursor: crosshair;
+            }
+        }
+    }
+}

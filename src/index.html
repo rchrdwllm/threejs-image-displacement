@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/locomotive-scroll.css" />
+        <link rel="stylesheet" href="css/style.scss" />
+        <title>Three JS</title>
+    </head>
+    <body>
+        <div class="scroll-container">
+            <section>
+                <h1>
+                    Hello, I'm
+                    <span class="hoverable" data-img="me"
+                        >Richard William!</span
+                    >
+                    I'm a
+                    <span class="hoverable" data-img="code"
+                        >front-end web developer.</span
+                    >
+                </h1>
+            </section>
+            <section>
+                <img
+                    class="scrollable"
+                    data-img="code"
+                    src="img/code.jpg"
+                    alt=""
+                />
+                <img
+                    src="img/eagle.jpg"
+                    data-img="eagle"
+                    alt=""
+                    class="scrollable"
+                />
+                <img
+                    src="img/bali.jpg"
+                    data-img="bali"
+                    alt=""
+                    class="scrollable"
+                />
+            </section>
+        </div>
+        <script src="js/index.js" type="module"></script>
+    </body>
+</html>
